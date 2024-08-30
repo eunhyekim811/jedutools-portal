@@ -18,15 +18,15 @@
 <body>
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <img src="/img/jcloud.png" alt="Logo" class="d-inline-block align-text-top" height="35px" />
+      <a class="navbar-brand d-flex align-items-center gap-2 custom-brand" href="#">
+        <img src="/img/jbnu.png" alt="Logo" class="d-inline-block align-text-top" height="35px" />
         JEudTools Portal
       </a>
       <div class="d-flex align-items-center gap-2">
         <div class="d-flex align-items-center">
-          <span id="username" class="spinner-border"></span>님 반갑습니다!
+          <span id="username" class="custom-username spinner-border"></span>님 반갑습니다!
         </div>
-        <button class="btn btn-primary" onclick="logout();">logout</button>
+        <button class="btn btn-custom" onclick="logout();">logout</button>
       </div>
     </div>
   </nav>
@@ -39,9 +39,9 @@
         <a href="http://114.70.193.169:18080/identity/v3/auth/OS-FEDERATION/identity_providers/keycloak/protocols/openid/websso?origin=http://114.70.193.169:18080/horizon/auth/websso/"
           target="_blank" class="text-decoration-none">
           <div class="card shadow-sm">
-            <img src="/img/jcloud.png" class="card-img-top" alt="jCloud Image">
+            <img src="/img/jcloud.png" class="card-img-top fixed-image" alt="jCloud Image">
             <div class="card-body">
-              <h5 class="card-title text-center">JCloud 바로가기</h5>
+              <h5 class="card-title text-center">JCloud</h5>
               <p class="card-text">전북대학교 클라우드 시스템</p>
             </div>
           </div>
@@ -53,7 +53,7 @@
         <a href="http://114.70.193.169:18080/identity/v3/auth/OS-FEDERATION/identity_providers/keycloak/protocols/openid/websso?origin=http://114.70.193.169:18080/horizon/auth/websso/"
           target="_blank" class="text-decoration-none">
           <div class="card shadow-sm">
-            <img src="/img/jcloud.png" class="card-img-top" alt="jCode Image">
+            <img src="/img/jcode.png" class="card-img-top fixed-image" alt="jCode Image">
             <div class="card-body">
               <h5 class="card-title text-center">JCode</h5>
               <p class="card-text">Web 기반 IDE 서비스</p>
@@ -67,7 +67,7 @@
         <a href="http://114.70.193.169:18080/identity/v3/auth/OS-FEDERATION/identity_providers/keycloak/protocols/openid/websso?origin=http://114.70.193.169:18080/horizon/auth/websso/"
           target="_blank" class="text-decoration-none">
           <div class="card shadow-sm">
-            <img src="/img/jcloud.png" class="card-img-top" alt="jCode Image">
+            <img src="/img/litmus.png" class="card-img-top fixed-image" alt="Litmus Image">
             <div class="card-body">
               <h5 class="card-title text-center">리트머스</h5>
               <p class="card-text">프로그래밍 과제 자동 채점 시스템</p>
@@ -81,10 +81,10 @@
         <a href="http://114.70.193.169:18080/identity/v3/auth/OS-FEDERATION/identity_providers/keycloak/protocols/openid/websso?origin=http://114.70.193.169:18080/horizon/auth/websso/"
           target="_blank" class="text-decoration-none">
           <div class="card shadow-sm">
-            <img src="/img/jcloud.png" class="card-img-top" alt="jCode Image">
+            <img src="/img/booking.png" class="card-img-top fixed-image" alt="jCode Image">
             <div class="card-body">
               <h5 class="card-title text-center">예약시스템</h5>
-              <p class="card-text">전북대 컴퓨터 기자재 예약 시스템</p>
+              <p class="card-text">전북대학교 컴퓨터 기자재 예약 시스템</p>
             </div>
           </div>
         </a>
@@ -95,10 +95,10 @@
         <a href="https://jedutools.jbnu.ac.kr/"
           target="_blank" class="text-decoration-none">
           <div class="card shadow-sm">
-            <img src="/img/jcloud.png" class="card-img-top" alt="jCode Image">
+            <img src="/img/jhelper.png" class="card-img-top fixed-image padded-image" alt="jCode Image">
             <div class="card-body">
-              <h5 class="card-title">JHelper</h5>
-              <p class="card-text">전북대 컴퓨터 기자재 예약 시스템</p>
+              <h5 class="card-title text-center">JHelper</h5>
+              <p class="card-text">JEduTools 도움말 작성 및 배포 시스템</p>
             </div>
           </div>
         </a>
@@ -112,53 +112,53 @@
             <tr>
               <th>이름</th>
               <th>소개</th>
-              <th>링크</th>
-              <th>도움말</th>
-              <th>GitHub 저장소</th>
+              <th class="text-center">링크</th>
+              <th class="text-center">도움말</th>
+              <th class="text-center">GitHub 저장소</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>JCloud</td>
               <td>전북대학교 클라우드 시스템</td>
-              <td><a href="http://jcloud.jbnu.ac.kr">Click</a></td>
-              <td><a href="https://jcloud-devops.github.io/">Manual</a></td>
-              <td><a href="https://github.com/JBNU-JEduTools/JCloud">repo</a></td>
+              <td class="text-center"><a href="http://jcloud.jbnu.ac.kr">Click</a></td>
+              <td class="text-center"><a href="https://jcloud-devops.github.io/">Manual</a></td>
+              <td class="text-center"><a href="https://github.com/JBNU-JEduTools/JCloud">repo</a></td>
             </tr>
             <tr>
               <td>Litmus</td>
               <td>프로그래밍 과제 자동 채점 시스템</td>
-              <td><a href="http://litmus.jbnu.ac.kr">Click</a></td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><a href="http://litmus.jbnu.ac.kr">Click</a></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
             </tr>
             <tr>
               <td>JCode</td>
               <td>Web 기반 IDE 서비스</td>
-              <td></td>
-              <td><a href="https://jedutools.jbnu.ac.kr/JCode">Manual</a></td>
-              <td><a href="https://github.com/JBNU-JEduTools/JCode">repo</a></td>
+              <td class="text-center"></td>
+              <td class="text-center"><a href="https://jedutools.jbnu.ac.kr/JCode">Manual</a></td>
+              <td class="text-center"><a href="https://github.com/JBNU-JEduTools/JCode">repo</a></td>
             </tr>
             <tr>
               <td>JStackOverflow</td>
               <td>SW 관련 QnA 게시판</td>
-              <td><a href="http://idea.jbnu.ac.kr">Click</a></td>
-              <td><a href="https://jedutools.jbnu.ac.kr/JStackOverflow">Manual</a></td>
-              <td><a href="https://github.com/JBNU-JEduTools/JStackoverflow">repo</a></td>
+              <td class="text-center"><a href="http://idea.jbnu.ac.kr">Click</a></td>
+              <td class="text-center"><a href="https://jedutools.jbnu.ac.kr/JStackOverflow">Manual</a></td>
+              <td class="text-center"><a href="https://github.com/JBNU-JEduTools/JStackoverflow">repo</a></td>
             </tr>
             <tr>
               <td>JHelper</td>
               <td>JEduTools 도움말 작성 및 배포 시스템</td>
-              <td><a href="https://jedutools.jbnu.ac.kr/J-Helper">Click</a></td>
-              <td><a href="https://jedutools.jbnu.ac.kr/J-Helper">Manual</a></td>
-              <td><a href="https://github.com/JBNU-JEduTools/JHelper">repo</a></td>
+              <td class="text-center"><a href="https://jedutools.jbnu.ac.kr/J-Helper">Click</a></td>
+              <td class="text-center"><a href="https://jedutools.jbnu.ac.kr/J-Helper">Manual</a></td>
+              <td class="text-center"><a href="https://github.com/JBNU-JEduTools/JHelper">repo</a></td>
             </tr>
             <tr>
               <td>Watcher</td>
               <td>JCode 기반 코딩 액티비티 수집 및 분석 시스템</td>
-              <td></td>
-              <td></td>
-              <td><a href="https://github.com/JBNU-JEduTools/Watcher">repo</a></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"><a href="https://github.com/JBNU-JEduTools/Watcher">repo</a></td>
             </tr>
           </tbody>
         </table>
@@ -167,5 +167,54 @@
 
 
   </div>
+  <style>
+    .card-title {
+      font-weight: bold; /* 글씨를 더 두껍게 */
+    }
+  
+    .card-text {
+      font-size: 0.9rem; /* 글씨 크기 조정 */
+      color: #8f8e8e; /* 색상 조정, 필요 시 색상 코드 변경 */
+    }
+
+    .fixed-image {
+      width: 100%;  /* 이미지가 카드의 너비에 맞춰집니다 */
+      height: 180px; /* 고정된 높이 */
+      object-fit: contain;
+    }
+
+    .padded-image {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .navbar-brand img {
+      margin-right: 10px; /* 이미지와 텍스트 사이에 15px 간격 추가 */
+    }
+
+    .custom-brand {
+      color: #151416b4; /* 원하는 글씨 색상 */
+      padding-left: 10px; /* 글씨 왼쪽에 15px 패딩 추가 */
+      font-size: 1.5rem; /* 글씨 크기 조정 */
+      font-weight: bold;
+    }
+
+    #username {
+      font-size: 1.25rem; /* 글씨 크기 조정 */
+      font-weight: 500; /* 글씨 두께 조정 */
+      color: #000000; /* 글씨 색상 변경 */
+      margin-right: 5px;
+    }
+
+    .btn-custom {
+      background-color: #010253e3; /* 버튼 배경색 변경 */
+      border: none; /* 기본 테두리 제거 */
+      color: white; /* 버튼 텍스트 색상 변경 */
+    }
+
+    .btn-custom:hover {
+      background-color: #0102539f;
+    }
+  </style>
 </body>
 </html>
